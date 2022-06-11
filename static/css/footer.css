@@ -1,0 +1,13 @@
+.copyright {
+    background-color: rgb(255, 10, 1);
+    border-top: 1px solid rgb(255, 10, 1);
+    padding: 15px;
+}
+
+.copyright p {
+    margin: 0;
+    text-align: center;
+    font-size: 14px;
+    font-weight: 400;
+    color: rgb(255, 255, 255);
+}

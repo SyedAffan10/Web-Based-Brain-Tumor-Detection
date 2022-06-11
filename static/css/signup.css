@@ -1,0 +1,81 @@
+/* Add padding to containers */
+.signup .container {
+  padding: 16px;
+  max-width: 1140px;
+  margin: auto;
+}
+
+/* Set a grey background color and center the text of the "sign in" section */
+.signup {
+  padding: 120px 0px;
+  background-color: rgb(255, 255, 255);
+}
+
+.signup .row .title h1::before {
+  left: 0%;
+  right: 0%;
+}
+
+h1 {
+  border-bottom: rgb(255, 10, 1) solid 2px;
+}
+
+/* Full-width input fields */
+input[type=text], input[type=password], input[type=email] {
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid rgb(255, 10, 1);
+  box-sizing: border-box;
+}
+
+input[type=text]:focus, input[type=password]:focus, input[type=email]:focus {
+  background-color: rgb(255, 255, 255);
+  outline: none;
+}
+
+/* Overwrite default styles of hr */
+hr {
+  border: 1px solid rgb(255, 10, 1);
+  margin-bottom: 25px;
+}
+
+/* Set a style for the submit/register button */
+.registerbtn {
+  background-color: rgb(255, 10, 1);
+  color: rgb(255, 255, 255);
+  padding: 14px 20px;
+  margin: 8px 0;
+  border: none;
+  cursor: pointer;
+  width: 100%;
+  opacity: 0.9;
+}
+
+.registerbtn:hover {
+  color: rgb(255, 255, 255);
+  background-color: rgba(250, 23, 23, 0.89);
+}
+
+/* Add a blue text color to links */
+a {
+  color: rgb(255, 10, 1);
+}
+a:hover{
+  color: rgb(255, 10, 1);
+}
+
+@media screen and (max-width: 1024px){
+  .signup .container {
+      margin: auto;
+      align-items: center;
+  }
+}
+
+@media screen and (max-width: 600px){
+  .signup .container {
+      margin: auto;
+      align-items: center;
+  }
+}
