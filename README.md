@@ -35,7 +35,7 @@ That's how it will show the result.
 # Dashboard Page
 This all data come from database who have been Registered to us.
 
-![](https://github.com/SyedAffan10/Web-Based-Brain-Tumor-Detection/blob/d2e60614e51290ee734bb3c70e62a0dcf06878c8/Demo/result.png)
+![](https://github.com/SyedAffan10/Web-Based-Brain-Tumor-Detection/blob/fc56e27b704c816c09e2dbfb8078d692ba9c3ac5/Demo/Dashboard.png)
 
 # Contact Page
 Any patient would reach out by sending us the any query.
