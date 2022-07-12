@@ -104,7 +104,7 @@ a {
 
 .button a:hover {
   background-color: rgb(255, 255, 255);
-  color: #000;
+  color: rgb(255, 10, 1);
 }
 
 @media(max-width: 991px) {

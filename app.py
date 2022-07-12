@@ -89,15 +89,26 @@ def login():
       session['loggedin'] = True
       session['id'] = account['id']
       session['username'] = account['username']
-      # Redirect to home page
+      # Redirect to preview page
       return render_template("preview.html")
-      
+
+    if request.form['username'] == 'admin' and request.form['password'] == 'admin':
+      #creating variable for connection
+      cursor = mysql.connection.cursor(MySQLdb.cursors.DictCursor)
+
+      #executing query
+      cursor.execute('select * from accounts')
+
+      #fetching all records from database
+      data = cursor.fetchall()
+
+      # returning back to dashboard.html with all records from MySQL which are stored in variable data
+      return render_template("dashboard.html",data=data)
     else:
       # Account doesnt exist or username/password incorrect
       msg = 'Incorrect username/password!'
   # Show the login form with message (if any)
   return render_template('login.html', msg=msg)
-
 
 @app.route('/signup', methods=['GET', 'POST'])
 def signup():

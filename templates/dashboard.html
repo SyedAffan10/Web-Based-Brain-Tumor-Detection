@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Dashboard</title>
+    <link rel="shortcut icon" type="image/png" href="static/favicon.png">
+    <link href="https://cdn.bootcss.com/bootstrap/4.0.0/css/bootstrap.min.css" rel="stylesheet" />
+    <script src="https://cdn.bootcss.com/popper.js/1.12.9/umd/popper.min.js"></script>
+    <script src="https://cdn.bootcss.com/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://cdn.bootcss.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+    <link href="static/css/header.css" rel="stylesheet" />
+    <link href="static/css/main.css" rel="stylesheet" />
+</head>
+
+<body style="background-color:rgb(255, 255, 255)">
+    <!--Header Start-->
+
+    <header>
+        <div class="container">
+            <div class="row">
+                <div class="icon">
+                    <span>Brain Tumor Detection</span>
+                </div>
+
+                <div id="ham-burger" class="hamburger">
+                    <i class="fa fa-bars"></i>
+                </div>
+
+                <nav class="navbar">
+                    <ul>
+                        <li><a href="/" class="active">Home</a></li>
+                        <li><a href="/abstract">Abstract</a></li>
+                        <li><a href="/logout">Log Out</a></li>
+                        <li><a href="/signup">Register</a></li>
+                        <li><a href="/contact">Contact</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+    </header>
+
+    <!--Header End-->
+
+    <br><br><br><br><br><br>
+    <table border="1" cellpadding="8px" width="100%" style="background-color:#fcf3f3; margin:auto; text-align: center;">
+        <tr style="background-color:rgb(255, 10, 1);color:white">
+            <td>Username</td>
+            <td>Password</td>
+            <td>Email</td>
+        </tr>
+        {% for item in data %}
+        <tr>
+            <td>{{item.username}}</td>
+            <td>{{item.password}}</td>
+            <td>{{item.email}}</td>
+        </tr>
+        {% endfor %}
+    </table>
+
+
+</body>
+
+</html>

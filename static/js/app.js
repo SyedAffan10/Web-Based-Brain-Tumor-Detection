@@ -36,6 +36,8 @@ hamBurger.addEventListener("click", function () {
 }
 )
 
+
+
 //Preview Section 
 $(document).ready(function () {
     // Init
@@ -91,7 +93,3 @@ $(document).ready(function () {
     });
 
 });
-
-
-
-/////Hello World
